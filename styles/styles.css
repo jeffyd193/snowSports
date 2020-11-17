@@ -1,13 +1,8 @@
-/*Landing*/
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
+body{
+  margin: 0;
+}
 
+/*Landing*/
   .landing-title-layout{
     height: 100vh;
     width: 100vw;
@@ -17,32 +12,62 @@
     align-items: center;
     top: 0;
     position: absolute;
-
+    background-image: url('../img/snowMain.jpg');
+    background-size: cover;
   }
 
   .title-box{
     height: 10em;
     width: 20em;
-    background-color: #d3531a;
+    background-color: transparent;
     z-index: 2;
     color: rgba(0, 0, 0, .1);
-      /* if we can clip, do it */
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-    
-      /* what will show through the text
-          ~ or ~
-         what will be the background of that element */
-      background: whatever;
-    
-      /* fallback text color
-          ~ or ~
-         the actual color of text, so it better work on the background */
-      color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+/*Video Background Text project*/
+
+.video-box{
+  height: 10em;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.video-inlay{
+  height: 10em;
+  width: 20em;
+  background-color: #d3531a;
+  z-index: 1;
+}
+
+.video-container{
+  height: 10em;
+  width: 20em;
+  z-index: 1;
+}
+
+.explore-inlay{
+  height: 10em;
+  width: 20em;
+  z-index: 1;
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  margin-right: 25%;
+  margin-left: 25%;
+  z-index: 2;
+}
+
+/*End of Video Background Text Project*/
+
+
  /*HAMBURGER MENU*/
- .layout{
+.layout{
   height: 150vh;
   width: 100vw;
 }
@@ -100,7 +125,7 @@
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 
 #nav-icon3 span {
@@ -120,6 +145,7 @@
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+  z-index: 4;
 }
 
 /*End Test*/
@@ -143,6 +169,7 @@
   justify-content: left;
   position: fixed;
   border-top: 3em solid purple ;
+  z-index: 3;
 }
 
 .hide{
@@ -176,3 +203,53 @@
 
 /*end of hamburger menu
 
+/*carousel for mobile*/
+
+.carousel-container{
+  height: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: 15px solid transparent;
+  border-style: ridge;
+
+  box-shadow: 10px 30px 40px;
+  background: linear-gradient(45deg, #000000, #414141) border-box;
+  justify-content: space-around;
+}
+
+.img-container{
+  height: 90%;
+ padding: 20%;
+
+}
+
+.content{
+  height: 90%;
+  width: 100%;
+  border-radius: 5px;
+  border: #526470 outset 5px;
+  box-shadow: 10px 15px 5px;
+  
+  background: url("../img/contBcg-0.jpeg") center/cover fixed no-repeat;
+}
+
+button {
+  height: 7vh;
+  border-radius: 50px;
+  width: 9vw;
+  background: linear-gradient(to top, #0e0e0e, #414141);
+  color: white;
+  border-style: hidden;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+  margin: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to top, #222222, #5f5f5f);
+}
+
+/* End of carousel for mobile */
