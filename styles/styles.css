@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background: linear-gradient(to right, #000000, #2a2a2a);
 }
 
 /*Landing*/
@@ -230,8 +231,8 @@ body{
   border-radius: 5px;
   border: #526470 outset 5px;
   box-shadow: 10px 15px 5px;
-  
-  background: url("../img/contBcg-0.jpeg") center/cover fixed no-repeat;
+  background-position:;
+  background: url("../img/board1.jpg") center/cover no-repeat;
 }
 
 button {
@@ -253,3 +254,20 @@ button:hover {
 }
 
 /* End of carousel for mobile */
+
+.sale-layout{
+  height: 40vh;
+  width: 100vw;
+
+}
+
+.sale-content{
+  margin: 0;
+  height: 40vh;
+  width: 100vw;
+}
+
+.sale-content-clothing{
+  height: 55vh;
+  width: 100vw;
+}
