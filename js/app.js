@@ -32,14 +32,14 @@ $(document).ready(function(){
         if(counter < 0){
           counter = pictures.length -1
         }
-        imageDIV.style.backgroundImage = `url('../img/${pictures[counter]}.jpg')`
+        imageDIV.style.backgroundImage = `url('./img/${pictures[counter]}.jpg')`
       }
       if (button.classList.contains('rightBtn')){
         counter++
         if(counter > pictures.length -1){
           counter = 0
         }
-        imageDIV.style.backgroundImage = `url('../img/${pictures[counter]}.jpg')`
+        imageDIV.style.backgroundImage = `url('./img/${pictures[counter]}.jpg')`
       }
     })
   })
