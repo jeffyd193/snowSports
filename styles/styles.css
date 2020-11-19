@@ -308,16 +308,23 @@ button:hover {
 }
 
 .sale-image-label{
-  background-color: black;
+  background-color: rgba(8, 8, 8, 0.678);
   position: absolute;
   bottom: 8px;
-  left: 16px;
   text-decoration-line: none;
   color: #f3f3f3 ;
+  height:18vw;
+  width: 65vw;
+  font-size: 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4%;
+  font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
-.sale-image-label{
-  text-decoration-color: white;
+.label2{
+  right: 0;
 }
 
 .sale-content  span{
@@ -332,4 +339,9 @@ button:hover {
   color: white;
 }
 
+
+.sale-image-label:hover{
+  transition-duration: 600ms;
+  background-color: rgba(8, 8, 8, 1);
+}
 /* Bottom left text */
