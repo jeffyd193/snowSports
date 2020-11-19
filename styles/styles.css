@@ -259,7 +259,6 @@ body{
 .img-container{
   height: 90%;
  padding: 20%;
-
 }
 
 .content{
@@ -308,9 +307,17 @@ button:hover {
   width: 100vw;
 }
 
-.sale-label{
-  background-color: blue;
-  position: relative;
+.sale-image-label{
+  background-color: black;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-decoration-line: none;
+  color: #f3f3f3 ;
+}
+
+.sale-image-label{
+  text-decoration-color: white;
 }
 
 .sale-content  span{
@@ -318,3 +325,11 @@ button:hover {
   right: 10px;
   top: 10px;
 }
+
+.sale-image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
