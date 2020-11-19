@@ -80,6 +80,10 @@ body{
   width: 100%;
 }
 
+.container{
+  top: 0;
+}
+
 .container-list li{
   list-style: none;
   height: 4em;
@@ -101,7 +105,7 @@ body{
 .container-list a{
   text-decoration-line: none;
   color: #f3f3f3 ;
-  font-size: 54px;
+  font-size: 45px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -163,6 +167,7 @@ body{
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 4;
+  top: 0;
 }
 
 #nav-icon3 span {
@@ -250,7 +255,6 @@ body{
   align-items: center;
   border: 15px solid transparent;
   border-style: ridge;
-
   box-shadow: 10px 30px 40px;
   background: linear-gradient(45deg, #000000, #414141) border-box;
   justify-content: space-around;
@@ -345,3 +349,97 @@ button:hover {
   background-color: rgba(8, 8, 8, 1);
 }
 /* Bottom left text */
+
+@media only screen and (min-width: 768px) {
+
+  .explore-inlay, .title-box, .video-box, .video-inlay, .video-container{
+    height: 30em;
+    width: 45em;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .explore-inlay, .title-box, .video-box, .video-inlay, .video-container{
+    height: 20em;
+    width: 32em;
+  }
+
+  #nav-icon3{
+    visibility: hidden;
+  }
+
+  .pc-menu{
+    height: 6em;
+    width: 100vw;
+    background-color: #0e0e0e;
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pc-menu ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 10em;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+
+  .pc-menu li{
+    list-style: none;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 48px;
+    padding: 1%;
+  }
+
+  .pc-menu a{
+    color: #f3f3f3;
+    text-decoration: none;
+  }
+
+  .pc-menu li:hover{
+    background: linear-gradient( to left, #0e0e0e, #4e4e4e, #0e0e0e);
+    border-radius: 3px;
+    text-decoration: underline;
+  }
+
+  .carousel-container{
+    height: 40%;
+    width: 100%;
+  }
+
+  .content{
+    background-size: contain;
+    width: 40%;
+
+  }
+
+  .sale-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sale-content{
+    height: 20vh;
+    width: 20em;
+    bottom: 0;
+  }
+
+  .sale-image-label{
+    font-size: 32px;
+    height: 48px;
+    width: 100%;
+  }
+
+  .sale-content-clothing{
+    height: 20vh;
+    width: 20vw;
+  }
+}
