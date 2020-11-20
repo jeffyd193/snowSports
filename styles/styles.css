@@ -2,7 +2,7 @@
 
 body{
   margin: 0;
-  background: linear-gradient(to right, #000000, #2a2a2a);
+background-color: #000;
 }
 
 /*Landing*/
@@ -410,6 +410,7 @@ button:hover {
   .carousel-container{
     height: 40%;
     width: 100%;
+    border: 0;
   }
 
   .content{
@@ -440,5 +441,75 @@ button:hover {
   .sale-content-clothing{
     height: 20vh;
     width: 20vw;
+  }
+
+  .grid-layout{
+    display: grid;
+    gap: 8px;
+    height: 100%;
+    content: 8px;
+    width: 100%;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr ;
+    grid-template-areas: 
+    "board ski"
+    "mobile clothing"
+    "sale sale";
+  }
+
+  .board{
+    grid-area: board;
+    width: 100%;
+    height: 70vh;
+
+  }
+
+  .sale-content{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .ski{
+    grid-area: ski;
+    width: 100%;
+    height: 70vh;
+
+  }
+
+  .mobile{
+    grid-area: mobile;
+    width: 100%;
+    height: 80vh;
+
+  }
+
+  .sale{
+    grid-area: sale;
+    width: 100%;
+    height: 50vh;
+    margin-top: 10px;
+
+    display: flex;
+    justify-self: center;
+  }
+
+  .clothing{
+    grid-area: clothing;
+    width: 100%;
+    height: 80vh;
+
+  }
+
+  .sale-content-clothing{
+    width: 100%;
+    height: 80vh;
+  }
+
+  .sale-image-label{
+    width: 60%;
+    height: 15%;
+    font-size: 64px;
+    font-weight: 900;
   }
 }
