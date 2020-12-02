@@ -220,6 +220,10 @@ background-color: #000;
   animation-duration: 500ms;
 }
 
+.onload{
+  display: none;
+}
+
 .show {
   animation-name: show;
   animation-duration: 500ms;
@@ -228,18 +232,22 @@ background-color: #000;
 @keyframes show {
   0%{
       left: -800px;
+      visibility: hidden;
   }
   100%{
       left: 0px;
+      visibility: visible;
   }
 }
 
 @keyframes hide {
   0%{
       left: 0px;
+      visibility: visible;
   }
   100%{
       left: -800px;
+      visibility: hidden;
   }
 }
 
@@ -511,5 +519,12 @@ button:hover {
     height: 15%;
     font-size: 64px;
     font-weight: 900;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .sale{
+    height: 50vh;
+    width: 50vw;
   }
 }

@@ -2,9 +2,7 @@
 
 A simple modern functional snow sports equipment and clothing website.
 
--Non-responsive as of right now 
-
--Mobile Only format
+-semi-responsive as of right now 
 
 -Functional Hamburger Menu with easy to change and add links
 
