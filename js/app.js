@@ -6,8 +6,11 @@ $(document).ready(function(){
     $('.container').toggleClass('hide');
     $('.container').toggleClass('show');
   
-	});
+  });
+  
+  $('div.hidden').fadeIn(5000).removeClass('hidden');
 });
+
 
 (function() {
   const pictures = [

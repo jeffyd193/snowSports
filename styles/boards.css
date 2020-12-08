@@ -1,0 +1,67 @@
+@import url('./Londrina_Outline/LondrinaOutline-Regular.ttf');
+
+@font-face {
+    font-family: Londrina;
+    src: url(.fonts/Londrina_Outline/LondrinaOutline-Regular.ttf);
+  }
+
+@font-face {
+    font-family: Anoxic;
+    src: url(./AnoxicOutline-Medium.ttf);
+  }
+
+@media only screen and (min-width: 1080px) {
+
+    .boards-landing{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+
+    }
+
+
+    .video-inlay-boards{
+        width: 100vw;
+        z-index: 1;
+        background-size: cover;
+    }
+
+    .nav-position-boards{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 0;
+    }
+
+    .boards-font{
+        font-family: Anoxic;
+        position: absolute;
+        color: aliceblue;
+        z-index: 2;
+        font-size: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 8px solid aliceblue;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .boards-landing h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-container{
+        height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+    }
+}
